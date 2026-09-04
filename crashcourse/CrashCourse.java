@@ -1,5 +1,8 @@
 package crashcourse;
 
+
+import java.util.ArrayList;
+
 public class CrashCourse {     //Class header
 
     public static void main(String[] args) {
@@ -126,6 +129,45 @@ public class CrashCourse {     //Class header
         System.out.println("ROWS: " + arrygrid1.length);
         System.out.println("COLLUMS: " + arrygrid1[0].length);
         //collums go from the top (0) and decend down (1, 2, 3... ect)
+
+        //use curly braces for everything
+        int[][] arryGrid2 = { {7, 8, 9}, {4, 5, 6}, {1, 2, 3,}};
+
+        System.out.println(arryGrid2[0][1]); // access number 8
+        // the two brackets near arryGrid2 are simmilar to cordinates
+        System.out.println(arryGrid2[2][2]);
+        //Zero is the number one of Java and cannot be ignored since it is not like in math were it is nothing
+        // you can add elements together
+        System.out.println(arryGrid2[0][1] + arryGrid2[2][2]);
+
+        System.out.println(arryGrid2);
+        //REMINDER this just prints memory address since cords are not assigned to them
+
+        //when there is a class it has to be put in in pascal case (meaning no spaces and all words have capitals)
+
+        //ARRAYLISTS
+        //they can be any size. losts of built in functions to help.
+        // Avoid primitive data types (lowercase). There are special classes for Integer, Double, Boulean, String. Called "wrapper" classes
+
+        ArrayList<String> arryLst = new ArrayList<>();
+
+        arryLst.add( "word 1");
+        arryLst.add( "word 2");
+        arryLst.add( "word 3");
+
+        arryLst.remove(0);
+
+        arryLst.add(0, "word 4");
+
+        arryLst.set( 2, "word 5");
+
+        System.out.println(arryLst.size());
+
+        System.out.println(arryLst);
+
+        System.out.println(arryLst.get(2));
+
+
     }
 
 }
