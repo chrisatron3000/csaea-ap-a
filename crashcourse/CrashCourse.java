@@ -24,12 +24,13 @@ public class CrashCourse {     //Class header
         //PRIMITIVE VARIABLES:
 
         int a; //initalizes varible
-        double b; //varible with decimal, float
+        double b; //varible with decimal, float is another variation of this but with its own characteristics
         boolean c; //true or false;
+        
 
         a = 4;
         b = 5.5;
-        c = false; //lowercase unlike python
+        c = false; // the first letters are lowercase unlike python
 
         //Arithmetic operators
         // + - / *
@@ -47,17 +48,17 @@ public class CrashCourse {     //Class header
         d++;
         System.out.println("d is NOW " + d);
 
-        //COMPARISONS (always return tru or false)
+        //COMPARISONS (always return true or false)
         // < > <= >= == !=
-        System.out.println(4 < 5);
-        System.out.println(7 == 4);
-        System.out.println(1 != 5);
-        System.out.println(4 <= 5);
+        System.out.println(4 < 5); // lesser than
+        System.out.println(7 == 4); // equal to
+        System.out.println(1 != 5); // NOT equal to
+        System.out.println(4 <= 5); // lesser OR equal to 
         //examples of comparison (not all are included)
 
         //LOGICAL OPERATORS
         // in order of presedance: ! (NOT)  && (AND)  || (OR)
-        //presedance meaning wich one is valued first in order of priority
+        //presedance meaning wich one is valued first in order of priority 1. NOT 2. AND 3. OR
 
         boolean f = false; boolean t = true;
 
@@ -104,10 +105,14 @@ public class CrashCourse {     //Class header
 
         int[] arry1 = new int[10];
         System.out.println(arry1);
+        // The brackets "[]" are what certify this integer as an array
+        // since nothing was assighned to the 10 it made 10 zeros
+        // also this prints out the memory address and not the contents of the array
 
         System.out.println("length:" + arry1.length);
+        //prints out the length not the contents
 
-        arry1[0] = 11;
+        arry1[0] = 11; //reminder that 0 is the new 1 in java 
         arry1[1] = 2;
 
         System.out.println("Remainder: " + arry1[0] % arry1[1]);
@@ -125,20 +130,21 @@ public class CrashCourse {     //Class header
         // 0 0 0
         // 0 0 0
         // 0 0 0
-
+        // essentially a 4x3 grid
+        // the zeros are just placeholders but also because we didnt assighn anything to them yet
         System.out.println("ROWS: " + arrygrid1.length);
         System.out.println("COLLUMS: " + arrygrid1[0].length);
         //collums go from the top (0) and decend down (1, 2, 3... ect)
 
         //use curly braces for everything
-        int[][] arryGrid2 = { {7, 8, 9}, {4, 5, 6}, {1, 2, 3,}};
+        int[][] arryGrid2 = {{7, 8, 9}, {4, 5, 6}, {1, 2, 3,}};
 
         System.out.println(arryGrid2[0][1]); // access number 8
         // the two brackets near arryGrid2 are simmilar to cordinates
-        System.out.println(arryGrid2[2][2]);
+        System.out.println(arryGrid2[2][2]); //access number 3 (i think??)
         //Zero is the number one of Java and cannot be ignored since it is not like in math were it is nothing
         // you can add elements together
-        System.out.println(arryGrid2[0][1] + arryGrid2[2][2]);
+        System.out.println(arryGrid2[0][1] + arryGrid2[2][2]); 
 
         System.out.println(arryGrid2);
         //REMINDER this just prints memory address since cords are not assigned to them
@@ -258,6 +264,7 @@ public class CrashCourse {     //Class header
 
             }
             System.out.println();
+
 
 
         }
