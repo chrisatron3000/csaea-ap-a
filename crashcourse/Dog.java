@@ -55,6 +55,11 @@ public class Dog {
         isHome =false;
         energyLevel -= 15;
 
+        if (energyLevel < 0){
+
+            System.out.println("rip dog");
+        }
+
     }
 
     public void comeHome(){
