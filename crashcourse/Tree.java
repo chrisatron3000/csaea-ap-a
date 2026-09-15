@@ -32,7 +32,18 @@ public class Tree {
 
     }
 
-    public void absorb
+    public void absorb(){
+
+        System.out.println("You photosynthesised!")
+        glucoseLevel += 20;
+
+        if (glucoseLevel > 100){
+
+            glucoseLevel = 100;
+        }
+    }
+
+    
 
     
 }
