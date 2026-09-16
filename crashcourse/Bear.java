@@ -28,7 +28,7 @@ public class Bear {
 
     public void hunt(){
 
-        System.out.println("You hunted in a nearby river, caught a fish while you where at it!")
+        System.out.println(species +" hunted in a nearby river, caught a fish while you where at it!")
 
         hasFish = true;
 
@@ -36,13 +36,13 @@ public class Bear {
 
     public void castSpell(){
 
-        System.out.println("You casted a spell that decreases your mana! you dont know any other spells...")
+        System.out.println(species + " casted a spell that decreases your mana! you dont know any other spells...")
         mana -= 20;
 
         if (mana < 0){
 
             mana = 0;
-            System.out.println("shoot all those mana wasting spells left you with no mana.")
+            System.out.println(species + "shot all those mana wasting spells left you with no mana.")
         }
 
     
@@ -50,30 +50,30 @@ public class Bear {
 
     public void runAround(){
 
-        System.out.println("You decided to run around for a bit. you feel a bit tired")
+        System.out.println(species + " decided to run around for a bit. you feel a bit tired")
 
         weight -= 20;
 
         if (weight < 0){
-            System.out.println("you completely lost your depth makeing you a 2 dimensonal being");
+            System.out.println(species + " completely lost your depth makeing you a 2 dimensonal being");
             weight = 0;
         } 
         
-        System.out.println("you lost weight and you got hungry");
+        System.out.println(species + " lost weight and you got hungry");
         isHungry = true;
 
     }
 
     public void roar(){
 
-        System.out.println("you roared your heart out");
+        System.out.println(species +" roared their heart out");
 
     }
 
     public void rollAround(){
 
 
-        System.out.println("you rolled around");
+        System.out.println(species +" rolled around");
 
     }
     
