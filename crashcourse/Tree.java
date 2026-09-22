@@ -1,7 +1,8 @@
-package crashcourse;
+//package crashcourse;
 
-public class tree{
-
+public class Tree{
+    //instance variables:
+     /*made to be used instantly at the beggining of code */;
     //4 private variables 
     String specificVariety; //const
     private double height; // priv
@@ -13,7 +14,7 @@ public class tree{
     private boolean isDanger; //const & priv
     String leafColor;
 
-    public tree(String specificVariety, String barkColor, Boolean isDangerous){// 3 paramiters 3 attribus
+    public Tree(String specificVariety, String barkColor, Boolean isDangerous){// 3 paramiters 3 attribus
         // 3 attributes:
         this.specificVariety = specificVariety;
         this.barkColor = barkColor;
