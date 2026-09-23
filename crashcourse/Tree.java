@@ -51,7 +51,7 @@ public class Tree{
     public void grow(){
         // && is a symbol that makes both the requirments to be true
         // if else 1
-        if(0 < glucoseLevel && glucoseLevel< 100){
+        if(0 < glucoseLevel && glucoseLevel <= 100){
             height += 1;
             System.out.println(specificVariety + " grew taller to a new height of " + height); //concatination
         
@@ -71,7 +71,7 @@ public class Tree{
 
     public void expand(){
         // if else 2
-        if(0 < glucoseLevel && glucoseLevel< 100){
+        if(0 < glucoseLevel && glucoseLevel <= 100){
             RootLength *= 1.5;
             System.out.println(specificVariety + "expanded their roots to " + RootLength + " inches"); //concatination
         
