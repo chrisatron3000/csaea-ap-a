@@ -1,4 +1,4 @@
-package crashcourse;
+
 
 public class Bear {
 
@@ -28,7 +28,7 @@ public class Bear {
 
     public void hunt(){
 
-        System.out.println(species +" hunted in a nearby river, caught a fish while you where at it!")
+        System.out.println(species +" hunted in a nearby river, caught a fish while you where at it!");
 
         hasFish = true;
 
@@ -36,13 +36,13 @@ public class Bear {
 
     public void castSpell(){
 
-        System.out.println(species + " casted a spell that decreases your mana! you dont know any other spells...")
+        System.out.println(species + " casted a spell that decreases your mana! you dont know any other spells...");
         mana -= 20;
 
         if (mana < 0){
 
             mana = 0;
-            System.out.println(species + "shot all those mana wasting spells left you with no mana.")
+            System.out.println(species + "shot all those mana wasting spells left you with no mana.");
         }
 
     
@@ -50,7 +50,7 @@ public class Bear {
 
     public void runAround(){
 
-        System.out.println(species + " decided to run around for a bit. you feel a bit tired")
+        System.out.println(species + " decided to run around for a bit. you feel a bit tired");
 
         weight -= 20;
 
