@@ -1,4 +1,3 @@
-package crashcourse;
 
 public class Dog {
 
@@ -39,7 +38,7 @@ public class Dog {
 
     public void bite(){
 
-        System.out.print(this.name + " started biteing their toys")
+        System.out.print(this.name + " started biteing their toys");
 
     }
 
