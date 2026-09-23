@@ -1,5 +1,4 @@
-//package crashcourse;
-
+import module java.base;
 public class Tree{
     //instance variables:
      /*made to be used instantly at the beggining of code */;
@@ -90,10 +89,40 @@ public class Tree{
     public void selfDestruct(){
         isAlive = false;
         leafColor = "brown";
-        System.out.println(specificVariety + " has self destructed and died ):");
+        System.out.println(specificVariety + "has self destructed and died ):");
 
     }
 
 
 
 }
+Tree.java m1 = Pine("PineTree","Brown",False);
+Tree.java m1 = Pine("PineTree","Brown", false);
+Tree.java m1 = new Tree("PineTree","Brown",false);
+Tree.java m1 = new Pine("PineTree","Brown",false);
+Tree.java m1 = new Tree("PineTree","Brown",false);
+Tree m1 = new Pine("PineTree","Brown",false);
+Tree m1 = new Tree("PineTree","Brown",false);
+Tree m2 = new Tree("BirchTree","White", false);
+Tree m3 = new Tree("Palm","Beige",false);
+Tree m4 = new Tree("RedWoodTree","Red",false);
+Tree m5 = new Tree("WeepingWillowTree","GreyishBrown",false);
+m1.specificVariety
+m1.height
+m1.barkColor
+m1.RootLength
+m1.age
+m1.glucoseLevel
+m1.isAlive
+m1.isDanger
+m1.LeafColor
+m1.sway()
+m1.absorb()
+m1.absorb(oxygen = 100)
+m1.absorb(int oxygen =100)
+m1.absorb(100)
+m1.grow()
+m1.expand()
+m1.selfDestruct
+m1.selfDestruct
+m1.selfDestruct()
