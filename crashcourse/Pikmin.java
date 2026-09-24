@@ -59,30 +59,64 @@ public class Pikmin {
         }
     } 
     public void carryFood(){/*Pikmin carries food +TisCarrying -Texplore -energy*/
-        if (isExploring){
+        if (isExploring && !isCarrying && strength > 2 && energy > 0){
             isCarrying = true;
             energy -= 1;
+            System.out.println(name + "found some food and started carrying it");
         } else{
-            System.out.println(name + "i");
+            System.out.println(name + "wanted to carry food but is unable to");
         }
 
     }
     public void workout(){/*Pikmin works out +strenth -FCarry*/
-        strength -= 1;
+        if (!isCarrying && energy > 0){
+            strength += 1;
+            energy -= 1;
+            System.out.println(name + " worked out and gained strength");
+        } else {
+            System.out.println(name + "wanted to work out but they are occupied");
+        }
     }
     public void explore(){/*Pikmin explores +TisExploring*/
         isExploring = true;
     }
     public void goHome(){/*pikmin goes home +happiness +strength -FisExploring*/ 
+        isExploring = false;
         happiness += 1;
         strength += 1;
+        isCarrying = false;
 
+        System.out.println(name + " went home and dropped off any food they were carrying");
+
+        if(happiness > 5){
+                happiness = 5; 
+            }
     }
 
     // 2 parameter methods
 
-    public void JoinGroup(boolean isGroupfull){}
-    public void dayEnd(Boolean day){}
+    public void JoinGroup(boolean isGroupfull, boolean grouped){
+        if(!isGroupfull){
+            happiness += 1;
+            grouped = true;
+            System.out.println(name + " joined a group");
+            
+            if(happiness > 5){
+                happiness = 5; 
+            }
+
+
+        }
+    }
+    public void dayEnd(Boolean dayOver){
+
+        if(dayOver){
+
+            goHome();
+            energy = 0;
+
+        }
+    }
 
     
 
