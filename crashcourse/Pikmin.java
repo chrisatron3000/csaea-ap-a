@@ -3,13 +3,13 @@ public class Pikmin {
     String name; //constuctor
     private int leafStage; //priv 1
     private int energy; // priv 2
-    private double strength; // priv 3
+    double strength;
     boolean isCarrying;
-    private int happiness; //priv 4
+    private int happiness; //priv 3
     String type; // conrtuctor
-    private String captinName; // constructor + priv
+    private String captinName; // constructor + priv 4
     boolean isExploring;
-    private boolean isHome;
+    private boolean isHome; //priv 5
 
 
     public Pikmin(String name,String type, String captinName){
@@ -112,6 +112,8 @@ public class Pikmin {
 
         if(dayOver){
 
+            System.out.println("The day has ended and its too dark to be outside");
+            
             goHome();
             energy = 0;
 

@@ -16,7 +16,9 @@ public class PikminTester {
         var1.goHome();
         var1.dayEnd(true);
 
-        
+        System.out.println( var2.name + " strength is currently: " + var2.strength);
+        var2.workout();
+        System.out.println(var2.name + " strength now after working out is currently: " + var2.strength);
 
 
 
