@@ -95,7 +95,7 @@ public class Pikmin {
 
     // 2 parameter methods
 
-    public void JoinGroup(boolean isGroupfull, boolean grouped){
+    public void joinGroup(boolean isGroupfull, boolean grouped){
         if(!isGroupfull){
             happiness += 1;
             grouped = true;
