@@ -70,7 +70,7 @@ public class Pikmin {
     }
     public void workout(){/*Pikmin works out +strenth -FCarry*/
         if (!isCarrying && energy > 0){
-            strength += 1;
+            strength += 1.5;
             energy -= 1;
             System.out.println(name + " worked out and gained strength");
         } else {
@@ -79,6 +79,7 @@ public class Pikmin {
     }
     public void explore(){/*Pikmin explores +TisExploring*/
         isExploring = true;
+        System.out.println( name + " went out to explore");
     }
     public void goHome(){/*pikmin goes home +happiness +strength -FisExploring*/ 
         isExploring = false;
