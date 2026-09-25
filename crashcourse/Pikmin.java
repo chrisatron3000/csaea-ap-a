@@ -64,7 +64,7 @@ public class Pikmin {
             energy -= 1;
             System.out.println(name + "found some food and started carrying it");
         } else{
-            System.out.println(name + "wanted to carry food but is unable to");
+            System.out.println(name + " wanted to carry food but is unable to");
         }
 
     }
@@ -113,8 +113,8 @@ public class Pikmin {
         if(dayOver){
 
             System.out.println("The day has ended and its too dark to be outside");
-            
-            goHome();
+            isHome = true;
+            isExploring = false;
             energy = 0;
 
         }

@@ -11,7 +11,6 @@ public class PikminTester {
         var1.carryFood();
         var1.workout();
         var1.explore();
-        var1.explore();
         var1.joinGroup(false, false);
         var1.goHome();
         var1.dayEnd(true);
