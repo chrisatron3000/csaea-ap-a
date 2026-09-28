@@ -1,8 +1,8 @@
 public class Pikmin {
     
-    String name; //constuctor
+    private String name; //constuctor
     private int leafStage; //priv 1
-    private int energy; // priv 2
+    private double energy; // priv 2
     double strength;
     boolean isCarrying;
     private int happiness; //priv 3
@@ -25,6 +25,33 @@ public class Pikmin {
         isExploring = false;
         isHome = true;
     }
+
+    //example of a getter
+    public String getName(){/*String is a return type, return means to take everything in a method and bringing it back WITH actual data to tester */
+        System.out.println(name);
+        return name;
+
+    }
+
+    //example of a setter
+    //changes data
+    public void setName(String newName){
+
+        name = newName;
+
+    }
+
+    public double getEnergy(){
+        System.out.println("energy returned");
+        return energy;
+    }
+
+    public int getLeafstage(){
+        System.out.println("Leafstage returned");
+        return leafStage;
+    }
+
+ 
 
     
     // 5 attribute changing methods
