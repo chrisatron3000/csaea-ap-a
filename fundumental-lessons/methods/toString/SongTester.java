@@ -13,6 +13,8 @@ public class SongTester {
 
         a.getPlays();
 
+        a.getStars();
+
     }
     
 }
