@@ -111,9 +111,9 @@ public class Email {
     // Hint: two conditions that must both be true -> &&
     // Tools: toString, getUser, indexOf, -1, &&
 
-    public boolean isStaffFormat(){
-        return  && toString().indexOf("hcvds.org") != 1;
-    }
+    //public boolean isStaffFormat(){
+    //    return  && toString().indexOf("hcvds.org") != 1;
+    //}
 
 
 
